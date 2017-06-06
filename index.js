@@ -45,7 +45,9 @@ prompt.get(['hostname', 'port', 'username', 'password'], function (err, input) {
     });
     this.getSystemDateAndTime(function (err, result, xml) {
       console.log("System date + time");
+      console.log(err);
       console.log(result);
+      console.log(xml);
 
     });
     this.getVideoSources(function (err, info) {
